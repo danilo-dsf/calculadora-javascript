@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(206, 215, 222);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 88, 126);
+}
+/*
+div {
+    border: 1px solid red;
+}
+*/
+#app {
+    width: 805px;
+    height: 650px;
+    margin: 25px;
+    display: flex;
+}
+
+    #calculator {
+        width: 400px;
+        height: 100%;
+        background-color: rgb(31, 31, 31);
+    }
+
+        .app-title {
+            height: 10%;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.200);
+        }
+
+            .app-title h2 {
+                text-align: center;
+                margin: auto;
+                font-size: 1.2em;
+                color: white;
+            }
+
+        #calculator-display {
+            height: 15%;
+            font-size: 2.5em;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+
+        #calculator-separator {
+            font-weight: 300;
+            font-size: 0.5em;
+            height: 3%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: rgba(255, 255, 255, 0.500);
+            padding-right: 10px;
+        }
+
+        #button-container {
+            width: 100%;
+            height: 72%;
+            display: flex;
+            background-color: rgb(47, 47, 47);
+        }
+
+            #number-buttons {
+                width: 75%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+                .numbers {
+                    font-size: 1.3em;
+                    width: 33.33%;
+                    height: 25%;
+                    background-color: rgb(47, 47, 47);
+                    border: none;
+                    transition: background-color 0.2s;
+                }
+
+                    .numbers:hover {
+                        background-color: rgba(255, 255, 255, 0.150);
+                    }
+
+                    .numbers:active {
+                        background-color: rgb(27, 27, 27);
+                    }
+
+            #operation-buttons {
+                width: 25%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+                .operations {
+                    font-size: 1.3em;
+                    width: 100%;
+                    height: 16.6%;
+                    background-color: rgb(47, 47, 47);
+                    border: none;
+                    transition: background-color 0.2s;
+                }
+
+                    .operations:hover {
+                        background-color: rgba(255, 255, 255, 0.150);
+                    }
+
+                    .operations:active {
+                        background-color: rgb(47, 47, 47);
+                    }
+
+    #history {
+        width: 400px;
+        height: 100%;
+        margin-left: 3px;
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+
+        #history-content {
+            height: 80%;
+            padding: 10px;
+            text-align: right;
+            overflow-y: scroll;
+        }
+        
+            ::-webkit-scrollbar-track {
+                background-color: rgba(0, 0, 0, 0.200);
+            }
+            ::-webkit-scrollbar {
+                width: 6px;
+                background: rgba(0, 0, 0, 0.200);
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(31, 31, 31);
+            }
+
+            #history-content h2 {
+                color: rgba(255, 255, 255, 0.600);
+            }
+
+            #history-content h1 {
+                font-weight: 900;
+            }
+
+        #history-footer {
+            height: 10%;
+            background-color: rgba(0, 0, 0, 0.200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #clear-history {
+                font-size: 1.0em;
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                height: 100%;
+                transition: background-color 0.2s;
+            }
+
+                #clear-history:hover {
+                    background-color: rgba(255, 255, 255, 0.150);
+                }
+
+                #clear-history:active {
+                    background-color: rgb(47, 47, 47);
+                }

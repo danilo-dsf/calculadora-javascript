@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora - by danilodsf</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- inicio calculadora -->
+        <div id="calculator">
+            <div class="app-title">
+                <h2>Calculadora</h2>
+            </div>
+
+            <div id="calculator-display">
+            </div>
+
+            <div id="calculator-separator">
+                Desenvolvido por Danilo Ferreira
+            </div>
+
+            <div id="button-container">
+                <div id="number-buttons">
+                    <button class="numbers">7</button>
+                    <button class="numbers">8</button>
+                    <button class="numbers">9</button>
+                    <button class="numbers">4</button>
+                    <button class="numbers">5</button>
+                    <button class="numbers">6</button>
+                    <button class="numbers">1</button>
+                    <button class="numbers">2</button>
+                    <button class="numbers">3</button>
+                    <button class="numbers">0</button>
+                    <button class="numbers">.</button>
+                    <button class="numbers">=</button>
+                </div>
+
+                <div id="operation-buttons">
+                    <button class="operations">C</button>
+                    <button class="operations"><i class="fas fa-backspace"></i></button>
+                    <button class="operations">&divide;</button>
+                    <button class="operations">&times;</button>
+                    <button class="operations">-</button>
+                    <button class="operations">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- fim calculadora -->
+
+        <!-- inicio histórico -->
+        <div id="history">
+            <div class="app-title">
+                <h2>Histórico</h2>
+            </div>
+
+            <div id="history-content">
+            </div>
+
+            <div id="history-footer">
+                <button id="clear-history">Limpar histórico</button>
+            </div>
+        </div>
+        <!-- fim historico -->
+
+    </div>
+
+    <!-- carregando código JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
