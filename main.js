@@ -22,16 +22,17 @@ function calculate() {
 }
 
 /**
- * 
+ * [EN] Function to update operation history
+ * [PT] Função para atualizar o histórico de operações
  * @param {String} expression 
  * @param {Double} result 
  */
-function addToHistory(expression, result) {
+function addToHistory(copyExpression, result) {
     var oldExpression = document.createElement('h2');
     var oldResult = document.createElement('h1');
     var br = document.createElement('br')
     
-    oldExpression.innerHTML = expression.replace('*', '&times;').replace('/', '&divide;');
+    oldExpression.innerHTML = copyExpression.replace(/\*/g, '&times;').replace(/\//g, '&divide;');
     oldResult.innerHTML = Intl.NumberFormat('pt-BR', {maximumFractionDigits: 4}).format(result);;
 
     historyContent.appendChild(oldExpression);
@@ -40,7 +41,8 @@ function addToHistory(expression, result) {
 }
 
 /**
- * 
+ * [EN] Function to change the font size of the calculator display
+ * [PT] Função para alterar o tamanho da fonte do visor da calculadora
  */
 function changeDisplayTextSize() {
     var displayTextLength = calculatorDisplay.innerHTML.trim().length;
